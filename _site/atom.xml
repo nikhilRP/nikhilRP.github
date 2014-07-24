@@ -1,16 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Nikhil</title>
+ <title>Nikhil R Podduturi</title>
  <link href="http://nikhilRP.github.io/atom.xml" rel="self"/>
  <link href="http://nikhilRP.github.io/"/>
- <updated>2014-07-24T11:50:14-07:00</updated>
+ <updated>2014-07-24T14:09:10-07:00</updated>
  <id>http://nikhilRP.github.io</id>
  <author>
    <name>Nikhil</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>CUDA implementation of Irreproducible discovery rate(IDR).</title>
+   <link href="http://nikhilRP.github.io/2014/02/24/CUDA-implementation-of-Irresproducible-discovery-rate-(IDR)/"/>
+   <updated>2014-02-24T00:00:00-08:00</updated>
+   <id>http://nikhilRP.github.io/2014/02/24/CUDA-implementation-of-Irresproducible-discovery-rate-(IDR)</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://dx.doi.org/10.5281/zenodo.10909&quot;&gt;&lt;img src=&quot;https://zenodo.org/badge/doi/10.5281/zenodo.10909.png&quot; alt=&quot;DOI&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Help doc on how to compile GPU(CUDA) implementation of Irreproducible Discovery Rate (IDR) analysis.&lt;/p&gt;
+
+&lt;p&gt;Repo link - &lt;a href=&quot;https://github.com/ENCODE-DCC/idr-GPU&quot;&gt;https://github.com/ENCODE-DCC/idr-GPU&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Prerequisites to run IDR&lt;/h3&gt;
+
+&lt;h4&gt;Hardware requirements&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;NVIDIA GPU with compute capability of 3.0 or higher&lt;/li&gt;
+&lt;li&gt;CPU&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Software required:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;git&lt;/li&gt;
+&lt;li&gt;cmake&lt;/li&gt;
+&lt;li&gt;cuda (6.0 or higher)&lt;/li&gt;
+&lt;li&gt;C++ compiler&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For help installing CUDA please &lt;a href=&quot;http://docs.nvidia.com/cuda/index.html#axzz36o8BHKsT&quot;&gt;click here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Building IDR&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Get the current repo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git clone --recursive https://github.com/ENCODE-DCC/idr-GPU.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a directory parallel to the repo (eg: build)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;mkdir build
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Then follow the commands below &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;cd build
+cmake ../idr-GPU
+make idr
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+
+&lt;p&gt;Assuming that your current working directory is the one you created. &lt;/p&gt;
+
+&lt;p&gt;Eg: &lt;code&gt;build&lt;/code&gt; directory from above&lt;/p&gt;
+
+&lt;p&gt;List all the options&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;./idr/idr --help
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Sample idr run using test peak files in the repo&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;./idr/idr --peak-files ../idr-GPU/idr/data/peak1 ../idr-GPU/idr/data/peak2 --genome-file ../idr-GPU/idr/data/genome_table.txt --idr-cutoff 0.03
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The main contributors of IDR-GPU code:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nikhil R Podduturi  - nikhilrp@stanford.edu&lt;/li&gt;
+&lt;li&gt;J. Seth Strattan    - jseth@stanford.edu&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;J. Michael Cherry Lab, Department of Genetics, Stanford University School of Medicine&lt;/p&gt;
+</content>
+ </entry>
  
 
 </feed>

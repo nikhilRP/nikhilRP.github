@@ -11,7 +11,7 @@
 
   <title>
     
-      Nikhil &middot; 
+      CUDA implementation of Irreproducible discovery rate(IDR). &middot; Nikhil R Podduturi
     
   </title>
 
@@ -43,7 +43,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item active" href="/">Home</a>
+    <a class="sidebar-nav-item" href="/">Home</a>
 
     
 
@@ -81,16 +81,91 @@
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="/" title="Home">Nikhil</a>
-            <small></small>
+            <a href="/" title="Home">Nikhil R Podduturi</a><br>
+            <small>Machine that converts coffee into insights</small>
           </h3>
         </div>
       </div>
 
       <div class="container content">
-        <div class="posts">
-  
+        <div class="post">
+  <h1 class="post-title">CUDA implementation of Irreproducible discovery rate(IDR).</h1>
+  <span class="post-date">24 Feb 2014</span>
+  <p><a href="http://dx.doi.org/10.5281/zenodo.10909"><img src="https://zenodo.org/badge/doi/10.5281/zenodo.10909.png" alt="DOI"></a></p>
+
+<p>Help doc on how to compile GPU(CUDA) implementation of Irreproducible Discovery Rate (IDR) analysis.</p>
+
+<p>Repo link - <a href="https://github.com/ENCODE-DCC/idr-GPU">https://github.com/ENCODE-DCC/idr-GPU</a></p>
+
+<h3>Prerequisites to run IDR</h3>
+
+<h4>Hardware requirements</h4>
+
+<ul>
+<li>NVIDIA GPU with compute capability of 3.0 or higher</li>
+<li>CPU</li>
+</ul>
+
+<h4>Software required:</h4>
+
+<ul>
+<li>git</li>
+<li>cmake</li>
+<li>cuda (6.0 or higher)</li>
+<li>C++ compiler</li>
+</ul>
+
+<p>For help installing CUDA please <a href="http://docs.nvidia.com/cuda/index.html#axzz36o8BHKsT">click here</a></p>
+
+<h3>Building IDR</h3>
+
+<ul>
+<li>Get the current repo</li>
+</ul>
+<div class="highlight"><pre><code class="language-text" data-lang="text">git clone --recursive https://github.com/ENCODE-DCC/idr-GPU.git
+</code></pre></div>
+<ul>
+<li>Create a directory parallel to the repo (eg: build)</li>
+</ul>
+<div class="highlight"><pre><code class="language-text" data-lang="text">mkdir build
+</code></pre></div>
+<ul>
+<li>Then follow the commands below </li>
+</ul>
+<div class="highlight"><pre><code class="language-text" data-lang="text">cd build
+cmake ../idr-GPU
+make idr
+</code></pre></div>
+<h3>Usage</h3>
+
+<p>Assuming that your current working directory is the one you created. </p>
+
+<p>Eg: <code>build</code> directory from above</p>
+
+<p>List all the options</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">./idr/idr --help
+</code></pre></div>
+<p>Sample idr run using test peak files in the repo</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">./idr/idr --peak-files ../idr-GPU/idr/data/peak1 ../idr-GPU/idr/data/peak2 --genome-file ../idr-GPU/idr/data/genome_table.txt --idr-cutoff 0.03
+</code></pre></div>
+<p>The main contributors of IDR-GPU code:</p>
+
+<ul>
+<li>Nikhil R Podduturi  - nikhilrp@stanford.edu</li>
+<li>J. Seth Strattan    - jseth@stanford.edu</li>
+</ul>
+
+<p>J. Michael Cherry Lab, Department of Genetics, Stanford University School of Medicine</p>
+
 </div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+  </ul>
+</div>
+
       </div>
     </div>
 

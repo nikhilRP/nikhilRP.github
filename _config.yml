@@ -6,8 +6,8 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Nikhil
-tagline:          ''
+title:            Nikhil R Podduturi
+tagline:          'Machine that converts coffee into insights'
 description:      'Full-stack engineer. Machine that converts coffee into insights.'
 url:              http://nikhilRP.github.io
 baseurl:          '/'
