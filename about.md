@@ -17,4 +17,4 @@ title: About
 ![Snow boarding]({{ site.url }}/assets/snow_b.jpg)
 ![Tough mudder]({{ site.url }}/assets/tough_m.jpg)
 ![Sand dunes]({{ site.url }}/assets/dunes.jpg)
-![Cover drive]({{ site.url }}/assets/cover.jpg)
+![Cover drive]({{ site.url }}/assets/cover_d.jpg)
