@@ -13,8 +13,8 @@ title: About
   Oh look at me play....i'm a natural :P
 </p>
 
-![Square cut]({{ site.url }}/assets/cut.JPG)
-![Snow boarding]({{ site.url }}/assets/snow_b.JPG)
-![Tough mudder]({{ site.url }}/assets/tough_m.JPG)
-![Sand dunes]({{ site.url }}/assets/dunes.JPG)
-![Cover drive]({{ site.url }}/assets/cover.JPG)
+![Square cut]({{ site.url }}/assets/cut.jpg)
+![Snow boarding]({{ site.url }}/assets/snow_b.jpg)
+![Tough mudder]({{ site.url }}/assets/tough_m.jpg)
+![Sand dunes]({{ site.url }}/assets/dunes.jpg)
+![Cover drive]({{ site.url }}/assets/cover.jpg)
