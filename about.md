@@ -4,7 +4,9 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is still under construction. Until then just few pics!
+Machine that converts coffee into insights <br /><br />
+In other words: <br /><br />
+Qualified engineer and applied mathematician with seven years’ engineering experience in researching, designing, and creating genomics data analysis software in industry or academia. I currently specialize in High throughput sequence data analysis, GPU programming, Machine Learning and Data Mining.
 </p>
 
 ![Nikhil]({{ site.url }}/assets/CIMG1796.JPG)
