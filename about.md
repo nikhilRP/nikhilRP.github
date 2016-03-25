@@ -4,16 +4,11 @@ title: About me
 permalink: /about/
 ---
 
-<p class="message">
-Qualified engineer and applied mathematician with seven years’ engineering experience in researching, designing, and creating genomics data analysis software in industry or academia. I currently specialize in High throughput sequence data analysis, GPU programming, Machine Learning and Data Mining.
-</p>
+Machine that converts coffee into insights.
+
+Data scientist, engineer, hacker, coffee enthusiast, traveller, sailor. This blog will consist of data science and engineering posts I find interesting and a few of my own ideas. If I get anything wrong, please correct me.
 
 ![Nikhil]({{ site.url }}/assets/CIMG1796.JPG)
-
-<p class="message">
-  Oh look at me play....i'm a natural :P
-</p>
-
 ![Square cut]({{ site.url }}/assets/cut.jpg)
 ![Snow boarding]({{ site.url }}/assets/snow_b.jpg)
 ![Tough mudder]({{ site.url }}/assets/tough_m.jpg)
