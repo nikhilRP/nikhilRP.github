@@ -1,20 +1,27 @@
 ---
 layout: page
-title: About
+title: About me
+permalink: /about/
 ---
 
-<p class="message">
-Qualified engineer and applied mathematician with seven years’ engineering experience in researching, designing, and creating genomics data analysis software in industry or academia. I currently specialize in High throughput sequence data analysis, GPU programming, Machine Learning and Data Mining.
-</p>
+Hi, I am Gayan Virajith, a developer (who works on the web) based on Sri Lanka. 
+Graduated from the University College Dublin (National University of Ireland). 
 
-![Nikhil]({{ site.url }}/assets/CIMG1796.JPG)
+I am Working for [template-factory.nl][tf] also known as [Mearch ICT][m].
+Prefer to serve with Php and Ruby based stacks and also love to work 
+on [Jekyll][jekyll] and [Processwire CMS/CMF][pw].
 
-<p class="message">
-  Oh look at me play....i'm a natural :P
-</p>
+### Contact me
 
-![Square cut]({{ site.url }}/assets/cut.jpg)
-![Snow boarding]({{ site.url }}/assets/snow_b.jpg)
-![Tough mudder]({{ site.url }}/assets/tough_m.jpg)
-![Sand dunes]({{ site.url }}/assets/dunes.jpg)
-![Cover drive]({{ site.url }}/assets/cover_d.jpg)
+Find me on [Google+][google] / [Github][github] / [Twitter][Twitter] or just say `Hello` at 
+[gayanvirajith@gmail.com](gayanvirajith@gmail.com).
+
+
+[tf]: http://template-factory.nl
+[m]: http://mearch.com
+[pw]: http://processwire.com
+[pwf]: http://processwire.com/talk
+[jekyll]: http://jekyllrb.com
+[github]: https://github.com/gayanvirajith
+[google]: https://plus.google.com/+GayanVirajith
+[twitter]: https://twitter.com/gayanvirajith

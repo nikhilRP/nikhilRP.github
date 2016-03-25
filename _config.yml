@@ -1,24 +1,58 @@
-# Dependencies
-markdown:         redcarpet
-pygments:         true
+# Harmony Jekyll theme general configurations
+
+# Base URL
+baseurl: /musings
+
+# Site live URL
+url: http://nikhilrp.github.io
+
+# Localhost
+# url: http://127.0.0.1:4000
+
+# Harmony theme configuration. Please change accordingly.
+harmony:
+  name: Musings
+  # Little description about your site
+  description:
+  meta_description: >
+  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
+  author: # Author details
+    name: Nikhil R Podduturi
+    email: gayanvirajith@gmail.com
+    url: http://nikhilrp.github.io
+
+  # Google Analytics key, leave blank to ignore
+  google_analytics_key: UA-xxxx-x
+
+  # Profile links, leave blank to ignore
+  social:
+    github: nikhilrp
+    twitter:
+    facebook: nikhil343
+    gplus:
+    dribble:
+    pinterest:
+  # Toggle disclaimer in footer
+  show_disclaimer: true
+
+# Conversion / Build settings
+markdown:    kramdown
+# This is how you put pygments config in jekyll 2.0 instead of pygments: true
+highlighter: pygments
 
 # Permalinks
 permalink:        pretty
 
-# Setup
-title:            Nikhil R Podduturi
-tagline:          'Machine that converts coffee into insights'
-description:      'Full-stack engineer. Machine that converts coffee into insights.'
-url:              http://nikhilRP.github.io
-baseurl:          '/'
-paginate:         5
+exclude:
+  - CNAME
+  - Gemfile
+  - Rakefile
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - Gemfile.lock
 
-author:
-  name:           'Nikhil'
-  url:            
-
-# Custom vars
-version:          1.0.0
-
-github:
-  repo:           https://github.com/nikhilRP/nikhilrp.github.io
+# Sass conversion configs
+sass:
+    sass_dir: assets/css/_sass
+    style: :compressed

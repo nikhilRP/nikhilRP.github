@@ -1,0 +1,24 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Nikhil R Podduturi
+tagline:          'Machine that converts coffee into insights'
+description:      'Full-stack engineer. Machine that converts coffee into insights.'
+url:              http://nikhilRP.github.io
+baseurl:          '/'
+paginate:         5
+
+author:
+  name:           'Nikhil'
+  url:            
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/nikhilRP/nikhilrp.github.io
