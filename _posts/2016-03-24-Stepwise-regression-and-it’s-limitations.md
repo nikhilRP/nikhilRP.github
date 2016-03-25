@@ -1,3 +1,13 @@
+---
+layout: post
+title:  "Stepwise Regression And It’s Limitations"
+date:   2016-03-24 00:00:00
+description: Stepwise regression explained in simple terms
+categories:
+- blog
+permalink: stepwise-regression
+---
+
 Last time I wrote a blog post was 3 years ago. In those 3 years lot has changed, including country I live, place I work and domain I work in.&nbsp;
 
 After all these years of being away from this blog, I have decided to write at-least one blog post a month in the area of statistics and machine learning. My main motivation is to help out engineers and non mathematicians understand basic concepts of data science by keeping complicated math equations out of it (or to minimum).
