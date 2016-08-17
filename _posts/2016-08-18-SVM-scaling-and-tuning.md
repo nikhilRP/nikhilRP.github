@@ -43,6 +43,16 @@ You can also standardize your feature using a standard-score by determining the 
 * The subtraction of the mean from the original value (Similar to Rescaling) makes it Zero-mean.
 * The division by standard deviation makes it unit variance.
 
+Soft normalization is implemented in sklearn as preprocessing.StandardScalar
+
+usage:
+
+{% highlight python %}
+std_scale = StandardScaler().fit(X_train)
+X_train = std_scale.transform(X_train)
+X_test = std_scale.transform(X_test)
+{% endhighlight %}
+
 #### Hard normalization or rescaling the feature
 
 Rescaling the feature is a technique that sets the feature to a range between {-1, 1} based on the maximum value and the minimum value of the range within the feature. The Rescaling function is as follows:
@@ -51,6 +61,16 @@ Rescaling the feature is a technique that sets the feature to a range between {-
 
 * Here x-prime is the rescaled value
 * x-bar is the average, x-max is the maximum and x-min is the minimum in the range of possible values.
+
+Hard normalization is implemented in sklearn as preprocessing.MinMaxScalar
+
+usage:
+
+{% highlight python %}
+std_scale = MinMaxScaler().fit(X_train)
+X_train = std_scale.transform(X_train)
+X_test = std_scale.transform(X_test)
+{% endhighlight %}
 
 Some libraries recommend doing a 'hard' normalization. However, in our experience, we found that is better to do a 'soft' normalization which subtracts the mean of the values and divides by twice the standard deviation (again, by dimension). Thus, if your input has d dimensions, then you will have d means and d standard deviations, no matter how many training examples you have. Note that if you're implementing this yourself, standard deviations for some dimensions might be zero, so the division could give you a divide-by-zero error. So you should add a very small epsilon value to it to prevent this.
 
