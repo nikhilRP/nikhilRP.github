@@ -35,7 +35,7 @@ Also, if one of the features land up having a very broad range of value (Lets sa
 
 #### Soft normalization or Zero-mean, unit-variance
 
-You can also standardize your feature using a standard-score by determining the mean of the distribution within the range of possible values and the standard deviation. This is typically the most popular method used in other machine learning techniques such as Logistic-Regression or Support Vector Machines where margins for decision-boundaries has to be calculated. The equation for Zero-mean, unit variance is as follows:
+You can also standardize your feature using a standard-score by determining the mean of the distribution within the range of possible values and the standard deviation. This is typically the most popular method used in other machine learning techniques such as Logistic-Regression where margins for decision-boundaries has to be calculated. The equation for Zero-mean, unit variance is as follows:
 
 ![soft-normalization]({{ site.url }}/assets/images/1-tcnp8PBqZLvXPPirjpR3VA.png)
 
@@ -46,7 +46,7 @@ You can also standardize your feature using a standard-score by determining the 
 
 Rescaling the feature is a technique that sets the feature to a range between {-1, 1} based on the maximum value and the minimum value of the range within the feature. The Rescaling function is as follows:
 
-![hard-normalization]({{ site.url }}/assets/images/1-5nKjrDASuUVKh9UpRwix6g.JPG)
+![hard-normalization]({{ site.url }}/assets/images/1-5nKjrDASuUVKh9UpRwix6g.png)
 
 * Here x-prime is the rescaled value
 * x-bar is the average, x-max is the maximum and x-min is the minimum in the range of possible values.
