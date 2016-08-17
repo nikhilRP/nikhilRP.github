@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Support Vector Machines"
-date:   2016-03-24 00:00:00
-description: Stepwise regression explained in simple terms
+date:   2016-08-18 00:00:00
+description: SVM scaling and tuning parameters
 categories:
 - blog
-permalink: stepwise-regression
+permalink: support-vector-machines
 ---
 
 
