@@ -8,7 +8,6 @@ headerImage: false
 tag:
 - machine-learning
 - svm
-- scaling
 blog: true
 star: true
 author: nikhilrp
