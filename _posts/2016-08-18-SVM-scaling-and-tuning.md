@@ -37,18 +37,19 @@ Also, if one of the features land up having a very broad range of value (Lets sa
 
 You can also standardize your feature using a standard-score by determining the mean of the distribution within the range of possible values and the standard deviation. This is typically the most popular method used in other machine learning techniques such as Logistic-Regression or Support Vector Machines where margins for decision-boundaries has to be calculated. The equation for Zero-mean, unit variance is as follows:
 
-Zero-mean, unit variance
-The subtraction of the mean from the original value (Similar to Rescaling) makes it Zero-mean.
-The division by standard deviation makes it unit variance.
+![soft-normalization]({{ site.url }}/assets/images/1-tcnp8PBqZLvXPPirjpR3VA.png)
+
+* The subtraction of the mean from the original value (Similar to Rescaling) makes it Zero-mean.
+* The division by standard deviation makes it unit variance.
 
 #### Hard normalization or rescaling the feature
 
 Rescaling the feature is a technique that sets the feature to a range between {-1, 1} based on the maximum value and the minimum value of the range within the feature. The Rescaling function is as follows:
 
-Rescaling Function
+![hard-normalization]({{ site.url }}/assets/images/1-5nKjrDASuUVKh9UpRwix6g.JPG)
 
-Here x-prime is the rescaled value
-x-bar is the average, x-max is the maximum and x-min is the minimum in the range of possible values.
+* Here x-prime is the rescaled value
+* x-bar is the average, x-max is the maximum and x-min is the minimum in the range of possible values.
 
 Some libraries recommend doing a 'hard' normalization. However, in our experience, we found that is better to do a 'soft' normalization which subtracts the mean of the values and divides by twice the standard deviation (again, by dimension). Thus, if your input has d dimensions, then you will have d means and d standard deviations, no matter how many training examples you have. Note that if you're implementing this yourself, standard deviations for some dimensions might be zero, so the division could give you a divide-by-zero error. So you should add a very small epsilon value to it to prevent this.
 
