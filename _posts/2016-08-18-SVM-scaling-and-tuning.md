@@ -11,9 +11,9 @@ permalink: support-vector-machines
 
 Lately I have been using support vector machines a lot at work.
 
-*Why do we have to scale the data for SVM?*
+### Why do we have to scale the data for SVM?
 
-Before anyone writes a model, its prudent to learn the characteristics of the input data. Without really understanding the data, there is no way you can design a model.
+Before designing a model, its prudent to learn the characteristics of the input data. Without really understanding the data, there is no way you can design a model.
 
 Some of the characteristics of the input data can be:
 
@@ -27,13 +27,30 @@ Given this, its important to pre-process the input data. While all of this data 
 
 Specifically for support vector machines. SVMs make an assumption that the data provided is in a standard range, usually either 0 to 1, or -1 to 1 (roughly). So the normalization of feature vectors prior to feeding them to the SVM is very important. You want to make sure that for each dimension, the values are scaled to lie roughly within this range.
 
-Also, if one of the features land up having a very broad range of value (Lets say a particular attribute has a value ranging from 10 to 10,000), then the rest of the distance of other variables will be governed by the particular feature (either Euclidian in case of a RBF or the vector length in case of a dot-product).
+Also, if one of the features land up having a very broad range of value (Lets say a particular attribute has a value ranging from 10 to 10,000), then the rest of the distance of other variables will be governed by the particular feature (either Euclidian in case of a RBF or the vector length in case of a dot-product). In more detail, you have to normalize all of your feature vectors by dimension, not instance, prior to sending them to your SVM model. 
 
-In more detail, you have to normalize all of your feature vectors by dimension, not instance, prior to sending them to your SVM model. Some libraries recommend doing a 'hard' normalization, mapping the min and max values of a given dimension to 0 and 1. However, in our experience, we found that is better to do a 'soft' normalization which subtracts the mean of the values and divides by twice the standard deviation (again, by dimension). Thus, if your input has d dimensions, then you will have d means and d standard deviations, no matter how many training examples you have. Note that if you're implementing this yourself, standard deviations for some dimensions might be zero, so the division could give you a divide-by-zero error. So you should add a very small epsilon value to it to prevent this.
+#### Soft normalization or Zero-mean, unit-variance
+
+You can also standardize your feature using a standard-score by determining the mean of the distribution within the range of possible values and the standard deviation. This is typically the most popular method used in other machine learning techniques such as Logistic-Regression or Support Vector Machines where margins for decision-boundaries has to be calculated. The equation for Zero-mean, unit variance is as follows:
+
+Zero-mean, unit variance
+The subtraction of the mean from the original value (Similar to Rescaling) makes it Zero-mean.
+The division by standard deviation makes it unit variance.
+
+#### Hard normalization or rescaling the feature
+
+Rescaling the feature is a technique that sets the feature to a range between {-1, 1} based on the maximum value and the minimum value of the range within the feature. The Rescaling function is as follows:
+
+Rescaling Function
+
+Here x-prime is the rescaled value
+x-bar is the average, x-max is the maximum and x-min is the minimum in the range of possible values.
+
+Some libraries recommend doing a 'hard' normalization. However, in our experience, we found that is better to do a 'soft' normalization which subtracts the mean of the values and divides by twice the standard deviation (again, by dimension). Thus, if your input has d dimensions, then you will have d means and d standard deviations, no matter how many training examples you have. Note that if you're implementing this yourself, standard deviations for some dimensions might be zero, so the division could give you a divide-by-zero error. So you should add a very small epsilon value to it to prevent this.
 
 These normalized vectors are sent to your SVM library for training. Then during testing, it is important to construct the test feature vectors in exactly the same way, except that you use the means and standard deviations saved from the training data, rather than computing it from the test data. In other words, scale your test inputs using the saved means and standard deviations, prior to sending them to your SVM.
 
-*Parameter tuning*
+### Parameter tuning
 
 SVMs can be quite sensitive to training parameters, but fortunately there are relatively few of them to tune:
 
