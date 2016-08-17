@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Support Vector Machines"
+title:  "Scaling features and tuning parameters for SVM"
 date:   2016-08-18 00:00:00
-description: SVM scaling and tuning parameters
+description: Scaling features and tuning parameters for SVM
 categories:
 - blog
 permalink: support-vector-machines
 ---
 
 
-Lately I have been using support vector regression a lot at work. 
+Lately I have been using support vector machines a lot at work.
 
 Why do we have to scale the data for SVM?
 
