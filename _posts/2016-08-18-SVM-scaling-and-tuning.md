@@ -6,8 +6,9 @@ description: Feature scaling and parameter tuning for SVM
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
-- markdown
-- elements
+- machine-learning
+- svm
+- scaling
 blog: true
 star: true
 author: nikhilrp

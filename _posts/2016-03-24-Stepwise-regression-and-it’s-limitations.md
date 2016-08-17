@@ -6,8 +6,8 @@ description: Stepwise regression explained in simple terms
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
-- markdown
-- elements
+- machine-learning
+- regression
 blog: true
 star: true
 author: nikhilrp
