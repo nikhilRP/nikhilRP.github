@@ -3,13 +3,17 @@ layout: post
 title:  "Feature scaling and parameter tuning for SVM"
 date:   2016-08-18 00:00:00
 description: Feature scaling and parameter tuning for SVM
-categories:
-- blog
-permalink: support-vector-machines
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- markdown
+- elements
+blog: true
+star: true
+author: nikhilrp
 ---
 
-
-Lately I have been using support vector machines a lot at work.
+Lately I have been using support vector machines a lot at work. In this blog post I am going to explain few FAQs I get about them.
 
 ### Why do we have to scale the data for SVM?
 
@@ -27,7 +31,7 @@ Given this, its important to pre-process the input data. While all of this data 
 
 Specifically for support vector machines. SVMs make an assumption that the data provided is in a standard range, usually either 0 to 1, or -1 to 1 (roughly). So the normalization of feature vectors prior to feeding them to the SVM is very important. You want to make sure that for each dimension, the values are scaled to lie roughly within this range.
 
-Also, if one of the features land up having a very broad range of value (Lets say a particular attribute has a value ranging from 10 to 10,000), then the rest of the distance of other variables will be governed by the particular feature (either Euclidian in case of a RBF or the vector length in case of a dot-product). In more detail, you have to normalize all of your feature vectors by dimension, not instance, prior to sending them to your SVM model. 
+Also, if one of the features land up having a very broad range of value (Lets say a particular attribute has a value ranging from 10 to 10,000), then the rest of the distance of other variables will be governed by the particular feature (either Euclidian in case of a RBF or the vector length in case of a dot-product). In more detail, you have to normalize all of your feature vectors by dimension, not instance, prior to sending them to your SVM model.
 
 #### Soft normalization or Zero-mean, unit-variance
 

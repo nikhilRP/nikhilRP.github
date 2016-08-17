@@ -3,9 +3,14 @@ layout: post
 title:  "Stepwise Regression And It’s Limitations"
 date:   2016-03-24 00:00:00
 description: Stepwise regression explained in simple terms
-categories:
-- blog
-permalink: stepwise-regression
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- markdown
+- elements
+blog: true
+star: true
+author: nikhilrp
 ---
 
 Last time I wrote a blog post was 3 years ago. In those 3 years lot has changed, including country I live, place I work and domain I work in.&nbsp;
