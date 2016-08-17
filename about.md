@@ -5,8 +5,6 @@ permalink: /about/
 ---
 ### About me
 
-Machine that converts coffee into insights.
-
 Data scientist, engineer, hacker, coffee enthusiast, traveller, sailor. This blog will consist of data science and engineering posts I find interesting and a few of my own ideas. If I get anything wrong, please correct me.
 
 ![Nikhil]({{ site.url }}/assets/CIMG1796.JPG)
