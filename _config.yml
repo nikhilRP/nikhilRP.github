@@ -1,55 +1,94 @@
-# Harmony Jekyll theme general configurations
+# main text of home
+name: Nikhil Podduturi
+bio: Machine that converts coffee into insights
 
-# Base URL
-baseurl:
+# twitter summary info
+description: A blog about technology and stuff related
 
-# Site live URL
+# if it's an external image, update below for true
+# better with square images
+external-image: false
+picture: assets/cover_d.jpg
+
 url: http://nikhilrp.github.io
 
-# Localhost
-# url: http://127.0.0.1:4000
+permalink: /:title/
 
-# Harmony theme configuration. Please change accordingly.
-harmony:
-  name: Musings
-  # Little description about your site
-  description:
-  meta_description: >
-  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
-  author: # Author details
-    name: Nikhil R Podduturi
-    email: podduturi.nikhil@gmail.com
-    url: http://nikhilrp.github.io
-
-  # Google Analytics key, leave blank to ignore
-  google_analytics_key: UA-xxxx-x
-
-  # Profile links, leave blank to ignore
-  social:
-    github: nikhilrp
-    twitter:
-    facebook: nikhil343
-    gplus:
-    dribble:
-    pinterest:
-  # Toggle disclaimer in footer
-  show_disclaimer: true
-
+markdown: kramdown
 highlighter: rouge
 
-# Permalinks
-permalink:        pretty
+# To enable google analytics, supply your token below
+# analytics-google: 'UA-MYANALYTICS'
 
-exclude:
-  - CNAME
-  - Gemfile
-  - Rakefile
-  - README.md
-  - .gitignore
-  - .sass-cache
-  - Gemfile.lock
+# To enable piwik tracking, supply your url & site ID below
+# analytics-piwik-url: 'piwik.my-host.com'
+# analytics-piwik-id: 1
 
-# Sass conversion configs
+# if you don't want comments in your posts, set to false
+disqus: nikhilrp
+
+# if you don't have any of social below, comment the line
+facebook: nikhil343
+# twitter: mytwitter
+# google: mygoogle
+# instagram: myinstagram
+# pinterest: mypinterest
+# linkedin: mylinkedin
+# youtube: myyoutube
+# spotify: myspotify
+github: nikhilrp
+# medium: medium
+# vimeo: myvimeo
+email: poddturi.nikhil@gmail.com
+
+# do you want a larger site? change the option below
+# options: [normal, large] | default: normal
+# normal = 560px / large = 810px
+width: normal
+
+# if you don't need pagination, comment the *paginate* configs below
+# paginate: 5
+# paginate_path: "blog/:num/"
+
+# if you don't need projects, comment the *projects* configs below
+# projects: true
+
+# if you don't need "about" or "blog", comment them out below
+about: true
+blog: true
+
+# do you want to show the "read time" of the posts?
+read-time: true
+
+# do you want to show the "tags" inside the posts?
+show-tags: true
+
+# related posts inside a post?
+related: true
+
+# show next & prev links in blog post?
+blog-nav-links: false
+
+# show author block at the end of a post ?
+show-author: true
+
+# do you want some animations?
+animation: true
+
 sass:
-    sass_dir: assets/css/_sass
+    sass_dir: _sass
     style: :compressed
+
+gems:
+  - jemoji
+  - jekyll-mentions
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
+
+jekyll-mentions:
+    base_url: https://github.com
+
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, indigo-gh-pages.zip, Rakefile, screen-shot.png, travis.sh, tasks]

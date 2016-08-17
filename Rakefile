@@ -1,11 +1,9 @@
-require 'rake'
+require 'html/proofer'
 
-desc 'Preview the site with Jekyll'
-task :preview do
-    sh "jekyll serve --watch --drafts --baseurl '' --config _config.yml,_config-dev.yml"
-end
+# rake test
+desc "build and test website"
 
-desc 'Search site and print specific deprecation warnings'
-task :check do 
-    sh "jekyll doctor"
+task :test do
+  sh "bundle exec jekyll build"
+  HTML::Proofer.new("_site", {:href_ignore=> ['http://localhost:4000'], :verbose => true}).run
 end
