@@ -43,7 +43,7 @@ You can also standardize your feature using a standard-score by determining the 
 * The subtraction of the mean from the original value (Similar to Rescaling) makes it Zero-mean.
 * The division by standard deviation makes it unit variance.
 
-Soft normalization is implemented in sklearn as preprocessing.StandardScalar
+Soft normalization is implemented in sklearn as [StandardScalar](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
 
 usage:
 
@@ -62,7 +62,7 @@ Rescaling the feature is a technique that sets the feature to a range between {-
 * Here x-prime is the rescaled value
 * x-bar is the average, x-max is the maximum and x-min is the minimum in the range of possible values.
 
-Hard normalization is implemented in sklearn as preprocessing.MinMaxScalar
+Hard normalization is implemented in sklearn as [MinMaxScalar](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html#sklearn.preprocessing.MinMaxScaler)
 
 usage:
 
