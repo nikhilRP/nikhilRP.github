@@ -11,7 +11,7 @@ permalink: support-vector-machines
 
 Lately I have been using support vector machines a lot at work.
 
-** Why do we have to scale the data for SVM? **
+**Why do we have to scale the data for SVM?**
 
 Before anyone writes a model, its prudent to learn the characteristics of the input data. Without really understanding the data, there is no way you can design a model.
 
@@ -37,7 +37,7 @@ These normalized vectors are sent to your SVM library for training. Then during 
 
 If you're using scikit-learn, then this soft scaling is provided under preprocessing.StandardScaler.
 
-** Parameter tuning **
+**Parameter tuning**
 SVMs can be quite sensitive to training parameters, but fortunately there are relatively few of them to tune:
 
 First are C (the slack variable cost) and γ (the width of the Gaussian if using an RBF kernel) values. Generally these are searched in exponential factors: for C, something like 0.1, 1, 10, 100, 1000; for γ, something like 0.1, 0.01, 0.001, 0.0001, 0.00001). If possible, you should try all combinations of C and γ to find the ones that give you the best accuracy (using cross-validation). Also, if you're competing for a benchmark, it's important you evaluate this on a held out subset so you don't inadvertently overfit to the benchmark data.
