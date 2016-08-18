@@ -35,7 +35,7 @@ Also, if one of the features land up having a very broad range of value (Lets sa
 
 #### Soft normalization or Zero-mean, unit-variance
 
-You can also standardize your feature using a standard-score by determining the mean of the distribution within the range of possible values and the standard deviation. This is typically the most popular method used in other machine learning techniques such as Logistic-Regression where margins for decision-boundaries has to be calculated. The equation for Zero-mean, unit variance is as follows:
+You can standardize your feature using a standard-score by determining the mean of the distribution within the range of possible values and the standard deviation. This is typically the most popular method used in other machine learning techniques such as Logistic-Regression where margins for decision-boundaries has to be calculated. The equation for Zero-mean, unit variance is as follows:
 
 ![soft-normalization]({{ site.url }}/assets/images/1-tcnp8PBqZLvXPPirjpR3VA.png)
 
