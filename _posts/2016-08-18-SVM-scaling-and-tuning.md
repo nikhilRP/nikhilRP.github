@@ -13,7 +13,7 @@ star: true
 author: nikhilrp
 ---
 
-Lately I have been using support vector machines a lot at work. In this blog post I am going to explain few FAQs I get about them.
+Lately I have been using support vector machines a lot at work. In this blog post I am going to explain some FAQ I get about them.
 
 ### Why do we have to scale the data for SVM?
 
