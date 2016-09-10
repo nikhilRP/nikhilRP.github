@@ -13,7 +13,7 @@ star: true
 author: nikhilrp
 ---
 
-The IoT for Cities Hackathon is a 27 hour challenge which sees Engineers and Business Developers collaborating together on project for the Internet of Things (IoT) and challenging themselves to create useful products in a short period of time.
+The IoT for Smart Cities Hackathon is a 27 hour challenge which sees Engineers and Business Developers collaborating together on project for the Internet of Things (IoT) and challenging themselves to create useful products in a short period of time.
 
 Me along with Martin Kirst (a good friend of mine) decided to take part in it, and I am delighted to announce that we won the award for the “Best Smart City Solution”. The event started with a presentation of ideas, followed by the building phase and then the presenting of the project.
 
