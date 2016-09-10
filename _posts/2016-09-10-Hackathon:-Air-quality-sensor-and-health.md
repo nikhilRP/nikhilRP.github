@@ -38,13 +38,13 @@ The project had three important components (all provided by the event organizers
 * Gas Sensor
 * Dust Sensor
 
-### Dust Sensor:
+#### Dust Sensor:
 The primary purpose of this sensor is to measure air quality both indoor and outdoor (particles per million (ppm) for NH3, NOx, alcohol, Benzene, smoke, CO2 etc.) The feature that makes them stable working machines is a simple driver circuit, a wide detecting scope, and a fast and high sensitivity response time.
 
 ![air quality sensor]({{ site.url }}/assets/images/sensor.jpg)
 <div align="middle"><i><strong>Board with sensors</strong></i></div>
 
-### Gas Sensor
+#### Gas Sensor
 Gas sensor is an SNO2 heating sensor, which is highly sensitive to alcohol and mildly sensitive to Benzene components. These hardwearing sensors make a good choice for a project such as this.
 
 The heating tube is made of aluminium oxide and is covered by SnO2. When the current passes through the tube it heats up and the tin dioxide acts like a semiconductor. This allows a large number of electrons to flow through and increases the current flow. When alcohol molecules and the sensor come into close proximity, the ethanol burns transforming into acetic acid, creating a higher current across the sensor. The current change alters the values of the sensor.
