@@ -50,12 +50,12 @@ Gas sensor is an SNO2 heating sensor, which is highly sensitive to alcohol and m
 The heating tube is made of aluminium oxide and is covered by SnO2. When the current passes through the tube it heats up and the tin dioxide acts like a semiconductor. This allows a large number of electrons to flow through and increases the current flow. When alcohol molecules and the sensor come into close proximity, the ethanol burns transforming into acetic acid, creating a higher current across the sensor. The current change alters the values of the sensor.
 
 ## Analytics:
-Once the setup was completed, the sensor data was streamed directly to a firebase mobile platform. A simple mobile application was developed to get the data from the platform and provide real time readings to the user. The mobile application also features threshold adjustments for the air quality index according to the user’s health.
+Once the setup was completed, the sensor data was streamed directly to a firebase mobile platform. A simple mobile application was developed to get the data from the platform and provide real time readings to the user. The mobile application also features threshold adjustments for the air quality index according to the user’s health data.
 
 ![sensor and app]({{ site.url }}/assets/images/sensor-and-app.jpg)
 <div align="middle"><i><strong>Board with sensors and application</strong></i></div>
 
-The air quality data from nearby weather stations was gathered from the OpenAQ platform and stored using a web application. This data was primarily used to control and eliminate abnormal readings from the consumer air quality sensor.
+The air quality data from nearby weather stations was gathered from the OpenAQ platform and stored using a web application. This data was primarily used as control and eliminate abnormal readings from the consumer air quality sensor.
 
 ## Conclusion:
 This work presents a system to understand pollution accumulation levels at various locations and helps structure the readings with the help of real-time analytics. It can also help redirect vehicles and pedestrians to alternative routes with lower pollutant levels, helping reduce vehicular pollution and encouraging a healthier lifestyle.
