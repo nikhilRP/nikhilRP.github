@@ -5,6 +5,8 @@ permalink: /about/
 ---
 ### About me
 
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="nikhil-reddy-podduturi-247071a6"><a class="LI-simple-link" href='https://de.linkedin.com/in/nikhil-reddy-podduturi-247071a6?trk=profile-badge'>Nikhil Reddy Podduturi</a></div>
+
 Data scientist, engineer, hacker, coffee enthusiast, traveller, sailor. This blog will consist of data science and engineering posts I find interesting and a few of my own ideas. If I get anything wrong, please correct me.
 
 ![Nikhil]({{ site.url }}/assets/CIMG1796.JPG){: class="bigger-image" }
